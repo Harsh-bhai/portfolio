@@ -12,7 +12,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-40 object-cover object-center " src="/python.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -22,7 +22,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-40 object-cover object-center " src="/tailwind.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -32,7 +32,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-40 object-cover object-center " src="nextjs.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -42,7 +42,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-40 object-cover object-center " src="js.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -52,7 +52,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-20 object-cover object-center " src="strapi.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -62,7 +62,7 @@ const Skills = () => {
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
               <img alt="gallery" className="absolute   h-40 object-cover object-center " src="react.png" />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-cyan-300 opacity-0 hover:opacity-100">
+              <div className="px-8 py-10 relative z-10 w-full shadow-lg cursor-pointer rounded-lg bg-cyan-300 opacity-0 hover:opacity-100 transition ">
                 <h2 className="tracking-widest text-sm title-font font-medium text-cyan-500 mb-1">THE SUBTITLE</h2>
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
                 <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
