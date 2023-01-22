@@ -9,7 +9,8 @@ module.exports = {
       animation: {
         fadein: "fadein 2s ease-in-out",
         fadein5sec: "fadein5sec 2s ease-in",
-        translateyoval: "translateyoval 1s ease-in-out"
+        translateyoval: "translateyoval 1s ease-out",
+        wipedown:"wipedown 1s ease-out"
       },
 
       keyframes: {
@@ -24,6 +25,14 @@ module.exports = {
         translateyoval: {
           "0%": { transform: 'translateY(-45rem) rotate(-12deg)' },
           "100%": { transform: 'translateY(-16rem) rotate(-12deg)' }
+        },
+        wipedown:{
+          '0%': {
+            height:'0'
+          },
+          '100%': {
+            height:'100%'
+          }
         }
       }
     },
