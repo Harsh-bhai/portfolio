@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className='min-h-screen'><section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-wrap -mx-4 -mb-10 ">
+      <div className="flex flex-wrap -mx-4 -mb-10 md:mx-10"> {/* remove md:mx-10 */}
       <Link  href={'/vmart'}><div className="sm:w-2/5 mb-10 px-4  rounded-xl shadow-lg hover:scale-105 transition-transform delay-75 cursor-pointer p-4 bg-gradient-to-br from-cyan-500 via-white to-cyan-500">
           <div className="rounded-lg h-64 overflow-hidden">
             <img alt="content" className=" h-full w-full" src="/vmartfull.jpg"/>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation: {
         fadein: "fadein 2s ease-in-out",
+        fadein3: "fadein 2s ease-in-out animation-delay:1",
         fadein5sec: "fadein5sec 2s ease-in",
         translateyoval: "translateyoval 1s ease-out",
         wipedown:"wipedown 1s ease-out"
