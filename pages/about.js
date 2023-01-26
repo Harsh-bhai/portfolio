@@ -1,14 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { TbArrowBigRight } from "react-icons/tb";
 
 const About = () => {
   return (
     <div>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 md:-translate-y-32">
             <img
-              className="object-cover object-center rounded -translate-y-20 animate-fadein"
+              className="object-cover object-center rounded -translate-y-20 animate-fadein "
               alt="hero"
               src="/white1.png"
             />
@@ -18,21 +19,97 @@ const About = () => {
               Hi! I am Harsh Dewangan
             </h1>
             <p className="mb-8 leading-relaxed font-semibold">
-              I am a Web Developer ,Programer ,Data Scientist. Currently
-              pursuing B.Tech from Bhilai Institute Of Technology ,Durg. I am
-              Currently at 2nd year ,4th Semester.
-              <br /> I have these{" "}
-              <Link href={"/skills"}>
-                <a className="font-bold text-cyan-700 hover:text-cyan-800 underline">
-                  Skills.
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am a student at Bhilai Institute of Technology Durg, pursuing my Bachelor's degree in Computer
+                Science and Engineering.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 text-2xl" />I am a
+                full-stack developer and a programmer with skills in Next.js,
+                Tailwind CSS, Strapi, JavaScript, and Python, as well as
+                experience with programming languages such as C, C++, and Java.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I have
+                experience in creating both frontend and backend for web
+                applications, as well as knowledge in data science.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
+                My passion is to create clean, efficient, and user-friendly
+                websites and web applications. Check My skills<Link href={"/skills"}>
+                <a className="font-bold text-cyan-700 ml-1 hover:text-cyan-800 underline">
+                  Here.
                 </a>
               </Link>
-              <br/>Check out my
-              <Link href={"/skills"}>
-                <a className="font-bold text-cyan-700 hover:text-cyan-800 underline"> Linkedin
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am skilled
+                in Next.js, I am able to build performant and scalable web
+                applications.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I use Tailwind
+                CSS to create beautiful and consistent designs.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
+                My experience with Strapi gives me the ability to create a
+                headless Content Management System(CMS) backend.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am
+                well-versed in various databases, such as MySQL, PostgreSQL,
+                MongoDB, and SQLplus.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am a quick
+                learner, detail-oriented, and always eager to take on new
+                challenges.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am always
+                seeking to improve my skills and keep up to date with the latest
+                technologies and trends.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 text-2xl hidden md:block" />I am ready
+                  and available for an internship opportunity to gain hands-on
+                  experience in a professional setting. I am excited to work in
+                  a team and learn from experienced professionals.
+              </div>
+              <br />
+              <div className="flex mx-2 items-center">
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am
+                  confident that my skills, attitude, and work ethic make me a
+                  valuable asset to any team.
+              </div>
+              <br />
+              Please feel free to contact me if you have any questions or
+                would like to discuss a potential internship opportunity.
+              <br /> Check my all{" "}
+             
+              <br />
+              Check out my
+              <Link href={"https://www.linkedin.com/in/harsh-dewangan-3a44b5232/"}>
+                <a target={"_blank"} className="font-bold text-cyan-700 hover:text-cyan-800 underline">
+                  {" "}
+                  Linkedin
                 </a>
-              </Link> profile
-              <p className="text-xl my-4">Web Development</p>
+              </Link>{" "}
+              profile
+              {/* <p className="text-xl my-4">Web Development</p>
               I can create frontend and backend as well.
               <br />I can create frontend using : Next.js ,Tailwind Css, HTML
               ,etc.
@@ -42,7 +119,7 @@ const About = () => {
               in C ,C++ ,Python ,JavaScript .
               <p className="text-xl my-4">Data Science</p>I can deal with Big
               Data ,can filter data ,can create/train models using Python
-              language .
+              language . */}
             </p>
             {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-cyan-500 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-600 rounded text-lg">
