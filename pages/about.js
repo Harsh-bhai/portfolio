@@ -21,7 +21,8 @@ const About = () => {
             <p className="mb-8 leading-relaxed font-semibold">
               <br />
               <div className="flex mx-2 items-center">
-                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am a student at Bhilai Institute of Technology Durg, pursuing my Bachelor's degree in Computer
+                <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />I am a student at Bhilai Institute of Technology Durg, pursuing my Bachelor&apos;
+s degree in Computer
                 Science and Engineering.
               </div>
               <br />
