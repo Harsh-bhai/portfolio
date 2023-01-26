@@ -27,7 +27,7 @@ s degree in Computer
               </div>
               <br />
               <div className="flex mx-2 items-center">
-                <TbArrowBigRight className="text-cyan-800 mx-4 text-2xl" />I am a
+                <TbArrowBigRight className="text-cyan-800 mx-4 text-2xl hidden md:block" />I am a
                 full-stack developer and a programmer with skills in Next.js,
                 Tailwind CSS, Strapi, JavaScript, and Python, as well as
                 experience with programming languages such as C, C++, and Java.
