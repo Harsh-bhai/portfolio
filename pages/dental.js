@@ -2,20 +2,19 @@ import Link from "next/link";
 import React from "react";
 import { TbArrowBigRight } from "react-icons/tb";
 
-const Vmart = () => {
+const Dental = () => {
   return (
     <div className="min-h-screen">
       <h1 className="mx-14 my-6 flex text-2xl font-semibold text-cyan-500">
-        Project : <p className="mx-4 ">V-Mart</p>{" "}
+        Project : <p className="mx-4 ">Bhaskar Dental Care</p>{" "}
       </h1>
       <div className="img mx-4 md:mx-40 flex justify-center ">
-        <img src="/vmartfull.jpg " className=" md:h-96  rounded-xl brightness-75" alt="" />
+        <img src="/dental.jpg " className=" md:h-96  rounded-xl brightness-75" alt="" />
       </div>
       <div className="mx-10 flex flex-col space-y-4 my-10 text-cyan-600 ">
         <p className="flex  items-center text-sm md:text-xl  leading-relaxed">
           <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
-          V-Mart is an Online E-commerece website used to sell groceriers
-          ,fruits and many more ...
+          Bhaskar Dental Care is a Portfolio website and a hospital management website used to manage patients etc.
         </p>
         <p className="flex  items-center text-sm md:text-xl  leading-relaxed">
           <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
@@ -23,7 +22,7 @@ const Vmart = () => {
            Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL
           etc.</div>
         </p>
-        <Link href={"https://vmartfrontend.onrender.com"}>
+        <Link href={"https://Dentalfrontend.onrender.com"}>
           <a
             target={"_blank"}
             className="flex  items-center text-sm md:text-xl underline leading-relaxed text-cyan-400 hover:text-cyan-600 font-semibold"
@@ -37,4 +36,4 @@ const Vmart = () => {
   );
 };
 
-export default Vmart;
+export default Dental;
