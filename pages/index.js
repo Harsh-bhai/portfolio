@@ -17,8 +17,8 @@ export default function Home() {
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img className="object-cover object-center rounded animate-fadein5sec -translate-y-20 hidden md:block md:h-[50rem] brightness-75" alt="hero" src='/white2.png'/>
-      <img src="/oval.png" alt="" className='absolute h-48 -translate-y-64 -rotate-12 -z-10 translate-x-0 animate-translateyoval hidden md:block brightness-75'/>
+      <img className="object-cover object-center rounded animate-fadein5sec -translate-y-20 hidden md:block md:h-[50rem] brightness-75" alt="hero" src='white2.png'/>
+      <img src="oval.png" alt="" className='absolute h-48 -translate-y-64 -rotate-12 -z-10 translate-x-0 animate-translateyoval hidden md:block brightness-75'/>
     </div>
   </div>
 </section>

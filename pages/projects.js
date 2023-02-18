@@ -9,7 +9,7 @@ const Projects = () => {
       <Link  href={'/vmart'}>
         <div className="sm:w-2/5 mb-10 px-4  rounded-xl shadow-lg hover:scale-105 transition-transform delay-75 cursor-pointer p-4 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800">
           <div className="rounded-lg h-64 overflow-hidden">
-            <img alt="content" className=" h-full w-full  delay-100 hover:delay-300 brightness-50 hover:brightness-75   transition-transform" src="/vmartfull.jpg"/>
+            <img alt="content" className=" h-full w-full  delay-100 hover:delay-300 brightness-50 hover:brightness-75   transition-transform" src="vmartfull.jpg"/>
           </div>
           <div className="flex flex-col space-y-4 ">
           <h1 className=' font-bold text-cyan-500 my-2'>E-commerece</h1>
@@ -26,7 +26,7 @@ const Projects = () => {
       <Link  href={'/dental'}>
         <div className="sm:w-2/5 mb-10 px-4  rounded-xl shadow-lg hover:scale-105 transition-transform delay-75 cursor-pointer p-4 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800">
           <div className="rounded-lg h-64 overflow-hidden">
-            <img alt="content" className=" h-full w-full  delay-100 hover:delay-300 brightness-50 hover:brightness-75   transition-transform" src="/dental.jpg"/>
+            <img alt="content" className=" h-full w-full  delay-100 hover:delay-300 brightness-50 hover:brightness-75   transition-transform" src="dental.jpg"/>
           </div>
           <div className="flex flex-col space-y-4 ">
           <h1 className=' font-bold text-cyan-500 my-2'>Dental Clinic</h1>

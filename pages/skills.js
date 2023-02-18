@@ -21,7 +21,7 @@ const Skills = () => {
           </div>
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
-              <img alt="gallery" className="absolute   h-40 object-cover object-center " src="/tailwind.png" />
+              <img alt="gallery" className="absolute   h-40 object-cover object-center " src="tailwind.png" />
               <div className="px-8 py-10 relative z-10 w-full shadow-lg rounded-lg bg-gray-700 opacity-0 hover:opacity-100 transition ">
                 <h1 className="title-font text-lg font-medium text-cyan-400  mb-3">Tailwind CSS</h1>
                 <p className="leading-relaxed font-semibold text-cyan-600 my-2">Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces..</p>
@@ -62,7 +62,7 @@ const Skills = () => {
           </div>
           <div className="lg:w-1/3 sm:w-1/2 p-4">
             <div className="flex relative justify-center items-center">
-              <img alt="gallery" className="absolute   h-40 object-cover object-center " src="/python.png" />
+              <img alt="gallery" className="absolute   h-40 object-cover object-center " src="python.png" />
               <div className="px-8 py-10 relative z-10 w-full shadow-lg rounded-lg bg-gray-700 opacity-0 hover:opacity-100 transition ">
                 <h1 className="title-font text-lg font-medium text-cyan-400  mb-3">Python</h1>
                 <p className="leading-relaxed font-semibold text-cyan-600 my-2">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>

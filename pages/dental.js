@@ -9,7 +9,7 @@ const Dental = () => {
         Project : <p className="mx-4 ">Bhaskar Dental Care</p>{" "}
       </h1>
       <div className="img mx-4 md:mx-40 flex justify-center ">
-        <img src="/dental.jpg " className=" md:h-96  rounded-xl brightness-75" alt="" />
+        <img src="dental.jpg " className=" md:h-96  rounded-xl brightness-75" alt="" />
       </div>
       <div className="mx-10 flex flex-col space-y-4 my-10 text-cyan-600 ">
         <p className="flex  items-center text-sm md:text-xl  leading-relaxed">

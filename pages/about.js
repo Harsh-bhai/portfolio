@@ -11,9 +11,9 @@ const About = () => {
             <img
               className="object-cover object-center rounded -translate-y-20 animate-fadein brightness-75 z-10 relative "
               alt="hero"
-              src="/white1.png"
+              src="white1.png"
             />
-            <img src="/oval.png" className="brightness-75 -translate-y-[10.25rem] md:-translate-y-[14.50rem] skew-x-12 animate-translateyoval2" alt="" />
+            <img src="oval.png" className="brightness-75 -translate-y-[10.25rem] md:-translate-y-[14.50rem] skew-x-12 animate-translateyoval2" alt="" />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate-fadein md:-translate-y-0 -translate-y-32">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cyan-500">
