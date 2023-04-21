@@ -3,7 +3,7 @@
 import * as fs from 'fs';
 export default function handler(req, res) {
   try {
-    fs.readFile(`../../data/skills.json`, 'utf-8', (err, data) => {
+    fs.readFile(`data/skills.json`, 'utf-8', (err, data) => {
         res.status(200).json(JSON.parse(data));
       })
   } catch (error) {
