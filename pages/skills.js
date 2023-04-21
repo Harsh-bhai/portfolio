@@ -45,6 +45,6 @@ export async function getServerSideProps(context) {
   let dat = await a.json();
   let data = Object.entries(dat)
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { data:JSON.parse(JSON.stringify(data)) }, // will be passed to the page component as props
   };
 }
