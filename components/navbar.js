@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0 ">
             <Link  href={"/about"}><div onClick={toggle} className='hover:text-cyan-400 text-cyan-600 cursor-pointer'>About</div></Link>
             <Link  href={"/skills"}><div onClick={toggle} className='hover:text-cyan-400 text-cyan-600 cursor-pointer'>Skills</div></Link>
-            <Link  href={"/projects"}><div onClick={toggle} className= 'hover:text-cyan-400 text-cyan-600 cursor-pointer'>Projects</div></Link>
+            <Link  href={"/project"}><div onClick={toggle} className= 'hover:text-cyan-400 text-cyan-600 cursor-pointer'>Projects</div></Link>
             <Link  href={"/contact"}><div onClick={toggle} className='hover:text-cyan-400 text-cyan-600 cursor-pointer'>Connect</div></Link>
           </div>
         </div>
