@@ -1,7 +1,52 @@
 import React,{useState} from 'react'
 import Link from 'next/link'
-import dat from "../data/skills.json"
+// import dat from "../data/skills.json"
 const Skills = ({}) => {
+  let dat={
+    "Next.js":{
+        "img":"next.png",
+        "desc":"Next.js is a flexible React framework that gives you building blocks to create fast web .."
+    },
+    "Tailwind CSS":{
+        "img":"tailwind.png",
+        "desc":"Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces.."
+    },
+    "Python":{
+        "img":"python.png",
+        "desc":"Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+    },
+    "JavaScript":{
+        "img":"js.png",
+        "desc":"JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.."
+    },
+    "Strapi":{
+        "img":"strapi.png",
+        "desc":"Strapi is an open-source, Node. js based, Headless CMS that saves developers a lot of development time while giving them the freedom to use their favorite tools and frameworks.."
+    },
+    "React.js":{
+        "img":"react.png",
+        "desc":"React.js is a free and open-source front-end JavaScript library for building user interfaces based on UI components. ."
+    },
+    
+    "MongoDB":{
+        "img":"MongoDB.png",
+        "desc":"MongoDB is a non-relational document database that provides support for JSON-like storage."
+    },
+    "Java":{
+        "img":"java.png",
+        "desc":"Java is a high-level, class-based, object-oriented programming language"
+    },
+    "MySQL":{
+        "img":"mysql.png",
+        "desc":"MySQL is a programming language for storing and processing information in a relational database"
+    },
+    "C":{
+        "img":"c.png",
+        "desc":"What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems."
+    }
+    
+    
+}
   let data = Object.entries(dat)
   const [hoveredItem, setHoveredItem] = useState(null);
   console.log(data)
