@@ -9,6 +9,7 @@ const Project = ({}) => {
     const router=useRouter()
     const {project}=router.query
     let dataitem=data[project]
+    console.log(dataitem,"here")
 
     return (
       <div className="min-h-screen">
