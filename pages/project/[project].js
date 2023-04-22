@@ -60,6 +60,9 @@ const Project = ({}) => {
   
     const router=useRouter()
     const {project}=router.query
+    if (!project) {
+      return <div>Loading...</div>;
+    }
     let dataitem=data[project]
     console.log(dataitem,"here")
 
