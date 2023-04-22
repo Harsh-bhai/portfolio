@@ -2,9 +2,10 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { TbArrowBigRight } from "react-icons/tb";
+import data from "../../data/allprojects.json"
 
-const Project = ({data}) => {
-  console.log(JSON.stringify(data))
+const Project = ({}) => {
+  // console.log(JSON.stringify(data))
     const router=useRouter()
     const {project}=router.query
     let dataitem=data[project]
@@ -43,15 +44,15 @@ const Project = ({data}) => {
 
 export default Project
 
-export async function getServerSideProps(context) {
-  let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getalldata`, {
-    headers: {
-      "Content-Type": "applicaton/json",
-    },
-  });
-  let data = await a.json();
-  // let data = Object.entries(dat)
-  return {
-    props: { data }, // will be passed to the page component as props
-  };
-}
+// export async function getServerSideProps(context) {
+//   let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getalldata`, {
+//     headers: {
+//       "Content-Type": "applicaton/json",
+//     },
+//   });
+//   let data = await a.json();
+//   // let data = Object.entries(dat)
+//   return {
+//     props: { data }, // will be passed to the page component as props
+//   };
+// }

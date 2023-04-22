@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import Link from 'next/link'
-const Skills = ({data}) => {
+import dat from "../data/skills.json"
+const Skills = ({}) => {
+  let data = Object.entries(dat)
   const [hoveredItem, setHoveredItem] = useState(null);
   console.log(data)
   return (
@@ -36,15 +38,15 @@ const Skills = ({data}) => {
 
 export default Skills
 
-export async function getServerSideProps(context) {
-  let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getskills`, {
-    headers: {
-      "Content-Type": "applicaton/json",
-    },
-  });
-  let dat = await a.json();
-  let data = Object.entries(dat)
-  return {
-    props: { data:JSON.parse(JSON.stringify(data)) }, // will be passed to the page component as props
-  };
-}
+// export async function getServerSideProps(context) {
+//   let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getskills`, {
+//     headers: {
+//       "Content-Type": "applicaton/json",
+//     },
+//   });
+//   let dat = await a.json();
+//   let data = Object.entries(dat)
+//   return {
+//     props: { data:JSON.parse(JSON.stringify(data)) }, // will be passed to the page component as props
+//   };
+// }

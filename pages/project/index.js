@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
-const index = ({ data }) => {
+import dat from "../../data/allprojects.json"
+
+const index = ({  }) => {
+  let data = Object.entries(dat)
   console.log(JSON.stringify(data));
   return (
     <div className="min-h-screen">
@@ -59,15 +62,15 @@ const index = ({ data }) => {
 
 export default index;
 
-export async function getServerSideProps(context) {
-  let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getalldata`, {
-    headers: {
-      "Content-Type": "applicaton/json",
-    },
-  });
-  let dat = await a.json();
-  let data = Object.entries(dat)
-  return {
-    props: { data }, // will be passed to the page component as props
-  };
-}
+// export async function getServerSideProps(context) {
+//   let a = await fetch(`${process.env.NEXT_PUBLIC_BASE}/api/getalldata`, {
+//     headers: {
+//       "Content-Type": "applicaton/json",
+//     },
+//   });
+//   let dat = await a.json();
+//   let data = Object.entries(dat)
+//   return {
+//     props: { data }, // will be passed to the page component as props
+//   };
+// }
