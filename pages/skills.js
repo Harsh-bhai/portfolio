@@ -63,7 +63,7 @@ const Skills = ({}) => {
                 onMouseLeave={() => setHoveredItem(null)}
               >
                 {hoveredItem !== item[0] && (
-                  <img src={item[1].img} alt={item[0]} className=" object-cover object-center w-60" />
+                  <img src={`/${item[1].img}`} alt={item[0]} className=" object-cover object-center w-60" />
                 )}
                 {hoveredItem === item[0] && (
                   <div className="cursor-pointer absolute rounded-lg flex flex-col items-center justify-center text-center p-4 bg-gray-700 bg-opacity-80 text-white transform transition-all">
