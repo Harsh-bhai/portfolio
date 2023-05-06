@@ -13,7 +13,7 @@ export default function Home() {
       <p className="mb-8 text-cyan-500 leading-relaxed">Pursuing B.Tech from Bhilai Institute Of Technology ,Durg .<br/>Know more about me -<Link href={'/about'}><a className=' font-bold'> Here</a></Link> </p>
       <div className="flex justify-center">
         <Link href={"/contact"}><button className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outline-none hover:bg-white hover:text-cyan-500 rounded-full text-xs space-x-1 md:text-lg"><span>Hire</span> <span>Me</span></button></Link>
-        <Link href={'https://drive.google.com/file/d/17OGdvmkoSqLZVCE-TSI4YeH-UYMr95l5/view?usp=sharing'}><a target={'_blank'}><button className="ml-4  text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white rounded-full text-xs md:text-lg">Resume</button></a></Link>
+        <Link href={'https://drive.google.com/file/d/1X33BNUSXmojbcs8K1p9pBD7STxDnJcM0/view?usp=sharing'}><a target={'_blank'}><button className="ml-4  text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white rounded-full text-xs md:text-lg">Resume</button></a></Link>
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
