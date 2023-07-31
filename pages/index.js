@@ -3,11 +3,19 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { SiDiscord } from "react-icons/si";
+import Head from "next/head";
 
 import Link from "next/link";
 export default function Home() {
   return (
-    <div>
+    <div className="">
+      <Head>
+        <style>{`
+          body {
+            overflow-y: hidden;
+          }
+        `}</style>
+      </Head>
       <section className="text-gray-600 body-2font">
         <div className="container mx-auto flex px-5 py-24 md:py-4 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center mx-32 md:-translate-y-10">
