@@ -5,7 +5,7 @@ import dat from "../../data/allprojects.json"
 const index = ({  }) => {
 
   let data = Object.entries(dat)
-  console.log(JSON.stringify(data));
+  // console.log(JSON.stringify(data));
   return (
     <div className="min-h-screen">
       <section className="text-gray-600 body-font">

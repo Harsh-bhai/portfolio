@@ -6,7 +6,8 @@
     "img":"vmartfull.jpg",
     "maindesc":"V-Mart is an Online E-commerece website used to sell groceriers ,fruits and many more ...",
     "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL etc.",
-    "link":"https://github.com/Harsh-bhai/Ecommerece"
+    "link":"https://github.com/Harsh-bhai/Ecommerece",
+    "live":"https://vmart.netlify.app"
   },
   "PlaylistPilot": {
     "type": "Music Organzier",
@@ -15,7 +16,8 @@
     "img":"playlistpilot.jpg",
     "maindesc":"PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allows user to create, modify playlist on the basis of TAGS.This application makes it easy to sort through large music libraries by enabling the use of tags to categorize songs by artist name, band name, genre, moods, and much more.",
     "tech":"Next.js ,Tailwind Css ,JavaScript ,Node.js ,MongoDB etc.",
-    "link":"https://github.com/Harsh-bhai/PlaylistPilot"
+    "link":"https://github.com/Harsh-bhai/PlaylistPilot",
+    "live":"https://playlistpilot.netlify.app"
   },
   "CrimeMapping": {
     "type": "Interactive data visualizer",
@@ -24,7 +26,8 @@
     "img":"crimemapping.jpg",
     "maindesc":"Created a website for Police to track crime record visually on Map, based on the previous crime. It maps crime on the basis of previous FIR details",
     "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL etc.",
-    "link":"https://github.com/Harsh-bhai/crime-mapping"
+    "link":"https://github.com/Harsh-bhai/crime-mapping",
+    "live":"https://crimemapper.netlify.app"
   }, 
 
   "Snakegame": {
@@ -34,7 +37,8 @@
     "img":"snake.jpg",
     "maindesc":"This is a 2D snake game created using python",
     "tech":"Python ,pygame library",
-    "link":"https://github.com/Harsh-bhai/Snake-game"
+    "link":"https://github.com/Harsh-bhai/Snake-game",
+    "live":null
   },
 
    "BhaskarDentalCare": {
@@ -44,7 +48,8 @@
     "img":"dental.jpg",
     "maindesc":"Bhaskar Dental Care is a Portfolio website and a hospital management website used to manage patients etc.",
     "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL etc.",
-    "link":"https://github.com/Harsh-bhai/Dental-clinic"
+    "link":"https://github.com/Harsh-bhai/Dental-clinic",
+    "live":null
   }
   
 }

@@ -11,7 +11,7 @@ const About = () => {
             <img
               className="object-cover object-center rounded -translate-y-20 animate-fadein brightness-75 z-10 relative "
               alt="hero"
-              src="white1.png"
+              src="white1-min.png"
             />
             <img src="oval.png" className="brightness-75 -translate-y-[10.25rem] md:-translate-y-[14.50rem] skew-x-12 animate-translateyoval2" alt="" />
           </div>
@@ -44,7 +44,7 @@ s degree in Computer
                 <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
                 My passion is to create clean, efficient, and user-friendly
                 websites and web applications. Check My skills<Link href={"/skills"}>
-                <a className="font-bold text-cyan-700 ml-1 hover:text-cyan-800 underline">
+                <a className="font-bold text-white ml-1 hover:text-cyan-800 translate-y-6 -translate-x-10 md:translate-x-0 md:translate-y-0">
                   Here.
                 </a>
               </Link>

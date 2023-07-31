@@ -49,7 +49,7 @@ const Skills = ({}) => {
 }
   let data = Object.entries(dat)
   const [hoveredItem, setHoveredItem] = useState(null);
-  console.log(data)
+  // console.log(data)
   return (
     <div className="m-4">
       <h1 className='text-center  sm:text-5xl text-2xl font-medium title-font mb-4 text-cyan-500'>Skills</h1>
