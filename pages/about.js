@@ -44,7 +44,7 @@ s degree in Computer
                 <TbArrowBigRight className="text-cyan-800 mx-4 hidden md:block" />
                 My passion is to create clean, efficient, and user-friendly
                 websites and web applications. Check My skills<Link href={"/skills"}>
-                <a className="font-bold text-white ml-1 hover:text-cyan-800 translate-y-6 -translate-x-10 md:translate-x-0 md:translate-y-0">
+                <a className="font-bold text-white ml-1 hover:text-cyan-800 translate-y-6 -translate-x-10 md:translate-x-0 md:translate-y-0 md:block hidden">
                   Here.
                 </a>
               </Link>
