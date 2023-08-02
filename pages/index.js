@@ -14,6 +14,12 @@ export default function Home() {
           body {
             overflow-y: hidden;
           }
+          @media (max-width: 480px) {
+            body {
+              overflow-y: scroll;
+            }
+          }
+          
         `}</style>
       </Head>
       <section className="text-gray-600 body-2font">
