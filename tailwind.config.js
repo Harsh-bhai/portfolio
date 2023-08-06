@@ -15,10 +15,25 @@ module.exports = {
         fadein5sec: "fadein5sec 2s ease-in",
         translateyoval: "translateyoval 1s ease-out",
         translateyoval2: "translateyoval2 1s ease-out",
-        wipedown:"wipedown 1s ease-out"
+        wipedown:"wipedown 1s ease-out",
+        blob: "blob 7s infinite",
       },
 
       keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
         fadein: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 }
