@@ -21,7 +21,7 @@ const Project = ({}) => {
         <div className="img mx-8 md:mx-20  flex flex-col md:flex-row justify-between items-center  ">
           <img src={`/${dataitem.img}`} className=" md:h-96  rounded-xl brightness-75" alt="" />
           {dataitem.live && <Link  href={dataitem.live}  >
-          <a target="_blank"><button className="flex mx-auto text-white bg-gradient-to-tr from-violet-400 via-cyan-700 to-blue-600 border-0 py-2 px-8 md:px-10 md:py-6 hover:from-violet-500 hover:via-cyan-700 hover:to-blue-600 hover:bg-gradient-to-br  focus:outline-none hover:bg-indigo-500 transition-transform font-semibold rounded-full mt-4 md:mt-0 text-lg md:text-3xl md:mr-36">Live Preview</button></a>
+          <a target="_blank"><button className="flex mx-auto text-white bg-gradient-to-tr from-violet-400 via-cyan-700 to-blue-600 border-0 py-2 px-8 md:px-10 md:py-6 hover:from-violet-500 hover:via-cyan-700 hover:to-blue-600 hover:bg-gradient-to-br  focus:outline-none hover:bg-indigo-500 transition-transform font-semibold rounded-full mt-4 md:mt-0 text-lg md:text-3xl md:mr-36 animate-pulse">Live Preview</button></a>
            </Link>}
         </div>
         <div className="mx-10 flex flex-col space-y-4 my-10 text-cyan-600 ">
