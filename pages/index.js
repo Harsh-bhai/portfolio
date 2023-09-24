@@ -68,7 +68,7 @@ export default function Home() {
               </Link>
               <Link
                 href={
-                  "https://drive.google.com/file/d/1P5VqjUrcCitoUZMNaj_D9Qnu-yAkI0RN/view?usp=sharing"
+                  "https://drive.google.com/file/d/1L9cNLxiTJwcHMAH8H7J60dSglMVQOyyd/view?usp=sharing"
                 }
               >
                 <a target={"_blank"}>
