@@ -25,7 +25,7 @@ const Rings = () => {
       ></img>
       <img
         src="ring.png"
-        className="h-6 w-6 animate-pulse  absolute top-60 left-28 rotate-6  "
+        className="h-6 w-6 animate-pulse  absolute top-60 left-24 rotate-6  "
       ></img>
     </div>
   );

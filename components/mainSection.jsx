@@ -14,11 +14,11 @@ const MainSection = () => {
     setShowTypewriter(true);
   }, []);
   return (
-    <div className="container relative mx-auto flex px-5 py-24 md:py-4 md:flex-row flex-col items-center">
+    <div className="container relative mx-auto flex px-5 py-24 md:py-4 md:flex-row flex-col items-center justify-between">
       <div className="">
         <div className=" lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center mx-32 md:-translate-y-10">
           <h1 className="text-cyan-500 title-font sm:text-5xl text-3xl mb-4 font-medium  animate-fadein">
-            Hi! I am Harsh Dewangan
+            <span className="md:text-3xl text-xl text-white mx-1">Hi! I am</span> <br/> Harsh Dewangan
             <p className="text-base md:text-2xl text-white my-2">
               {showTypewriter && (
                 <DynamicTypewriter
