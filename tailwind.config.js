@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+    extend: {  
+      screens: {
+      'Ltablet': '1105px',
+    },
+      fontFamily: {
+        primary:['Dancing Script', "cursive"],
+        secondary:['Prompt', 'sans-serif']
+      },
       fontSize:{
         xxs: ['0.5rem', '1rem'],
       },

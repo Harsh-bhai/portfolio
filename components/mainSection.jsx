@@ -1,11 +1,30 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Socials from "./socials";
+import gsap from "gsap";
+import { IoIosArrowDown } from "react-icons/io";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
+
 
 const MainSection = () => {
+  const timeline = gsap.timeline();
+
+  const scrollToSection = (sectionId) => {
+    gsap.to(window, {
+      duration: 1, // Adjust the duration as needed
+      scrollTo: {
+        y: `#${sectionId}`,
+        offsetY: 70, // Optional: Adjust the offset if you have a fixed header or additional spacing
+      },
+    });
+  };
+
+  
   const DynamicTypewriter = dynamic(() => import("typewriter-effect"), {
     ssr: false,
   });
@@ -13,10 +32,31 @@ const MainSection = () => {
   useEffect(() => {
     setShowTypewriter(true);
   }, []);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+    if(!isMobile){
+          // Set the initial position of the mask (fully covering the boy image)
+          gsap.set(".whiteimg", { clipPath: 'inset(0% 0% 0% 0%)' })
+          timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
+          timeline.from(".main",{opacity:0,ease:"power1",duration:1.5})
+          timeline.from(".oval", {y:"-1000%", opacity:0, duration: 3, ease: "power1"}, "<.5")
+          // Reveal the boy image using a clipping mask
+          timeline.from(".whiteimg", { clipPath: 'inset(0% 0% 100% 0%)',duration:3},"-=2.2")
+          timeline.from(".scrolldown",{opacity:0,duration:1},"-=1.5")
+    }
+       
+      }, [])
+
+    
+
+  
+
   return (
-    <div className="container relative mx-auto flex px-5 py-24 md:py-4 md:flex-row flex-col items-center justify-between">
+    <section id="hero" className="h-screen lg:h-fit relative w-screen mx-auto flex px-5 py-24 md:py-16 md:flex-row flex-col items-center justify-evenly">
       <div className="">
-        <div className=" lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center mx-32 md:-translate-y-10">
+        <div className="maindiv lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
           <h1 className="text-cyan-500 title-font sm:text-5xl text-3xl mb-4 font-medium  animate-fadein">
             <span className="md:text-3xl text-xl text-white mx-1">Hi! I am</span> <br/> Harsh Dewangan
             <p className="text-base md:text-2xl text-white my-2">
@@ -63,29 +103,30 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        {/* <div className="relative w-full max-w-lg">
-    <div className="absolute top-0 -left-4 w-72 h-72 bg-gray-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-    <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-    <div className="absolute -bottom-8 left-20 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div></div> */}
+      <div className="lg:max-w-lg lg:block hidden w-5/6 photodiv">
         <img
-          src="wave.png"
-          className="absolute w-[20rem] md:w-[50rem] -z-20 -translate-y-[35rem] md:translate-y-0 -translate-x-3 md:-translate-x-32 opacity-30 md:opacity-70"
+          src="halfwave.png"
+          className="absolute w-[70%] md:w-[35rem] md:-left-[10%] left-1 md:-top-10 top-0  opacity-50 -z-20 wave"
           alt=""
         />
         <img
-          className="object-cover object-center rounded animate-fadein5sec -translate-y-20 hidden md:block md:h-[50rem] brightness-75  hover:brightness-100 transition-transform"
+          className="object-cover object-center rounded  -translate-y-[6.4rem] hidden lg:block md:h-[50rem] brightness-90 transition-transform whiteimg"
           alt="hero"
-          src="white2-min.png"
+          src="white3min.png"
         />
         <img
-          src="oval.png"
+          src="oval 2.png"
           alt=""
-          className="absolute h-48 -translate-y-64 -rotate-12 -z-10 translate-x-0 animate-translateyoval hidden md:block brightness-75"
+          className="absolute h-48 md:-translate-y-64 -rotate-12 -z-10 translate-x-0  hidden lg:block brightness-75 oval "
+          // animate-translateyoval
         />
       </div>
       {/* <Socials/> */}
-    </div>
+      <div onClick={() => scrollToSection("about")} className="absolute cursor-pointer lg:bottom-48 bottom-0 lg:right-1/2 flex flex-col lg:translate-x-10 justify-center items-center space-y-2 scrolldown">
+        <span className="text-2xl text-white">Scroll Down</span>
+      <IoIosArrowDown className=" text-white text-3xl animate-bounce "/>
+      </div>
+    </section>
   );
 };
 

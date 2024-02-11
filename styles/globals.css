@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Prompt&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,3 +10,4 @@
       animation-delay: 4s;
     }
   }
+
