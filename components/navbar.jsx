@@ -6,6 +6,12 @@ import { useRef, useEffect } from "react";
 import { MdAccountCircle } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
+// import { FaRegLightbulb } from "react-icons/fa";
+// import { IoBagHandle } from "react-icons/io5";
+// import { MdInfoOutline } from "react-icons/md";
+// import { FaHandshakeSimple } from "react-icons/fa6";
+
+
 import Link from "next/link";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

@@ -84,11 +84,9 @@ const MainSection = () => {
             </Link>{" "}
           </p>
           <div className="flex justify-center">
-            <Link href={"/contact"}>
-              <button className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outlin6-no6 animate-pulsee hover: hover:text-cyan-500 hover:bg-white rounded-full text-xs space-x-1 md:text-lg">
+              <button onClick={() => scrollToSection("contact")} className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outlin6-no6 animate-pulsee hover: hover:text-cyan-500 hover:bg-white rounded-full text-xs space-x-1 md:text-lg">
                 <span>Hire</span> <span>Me</span>
               </button>
-            </Link>
             <Link
               href={
                 "https://drive.google.com/file/d/1L9cNLxiTJwcHMAH8H7J60dSglMVQOyyd/view?usp=sharing"
