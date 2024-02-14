@@ -183,7 +183,7 @@ try {
                   className="text-cyan-500 "
                 >
                   <a target="_blank">
-                    <AiFillGithub className="text-cyan-600 text-xl hover:scale-125 transition-transform md:text-4xl cursor-pointer" />
+                    <AiFillGithub className="text-cyan-600 text-xl hover:scale-125 transition-transform md:text-4xl hover:text-black cursor-pointer" />
                   </a>
                 </Link>
                 <Link
@@ -191,7 +191,7 @@ try {
                   className="text-gray-500"
                 >
                   <a target="_blank">
-                    <SiDiscord className="text-cyan-600 text-xl hover:scale-125 transition-transform md:text-4xl cursor-pointer" />
+                    <SiDiscord className="text-cyan-600 text-xl hover:scale-125 transition-transform md:text-4xl cursor-pointer hover:text-indigo-700" />
                   </a>
                 </Link>
                 <Link
@@ -206,7 +206,7 @@ try {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      className="md:w-8 w-5 cursor-pointer hover:scale-125 transition-transform "
+                      className="md:w-8 w-5 hover:text-blue-700 cursor-pointer hover:scale-125 transition-transform "
                       viewBox="0 0 24 24"
                     >
                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -225,7 +225,7 @@ try {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      className="md:w-8 w-5 cursor-pointer hover:scale-125 transition-transform "
+                      className="md:w-8 w-5 hover:text-pink-500 cursor-pointer hover:scale-125 transition-transform "
                       viewBox="0 0 24 24"
                     >
                       <rect
@@ -252,7 +252,7 @@ try {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="0"
-                      className="md:w-8 w-5 cursor-pointer hover:scale-125 transition-transform "
+                      className="md:w-8 w-5 hover:text-white cursor-pointer hover:scale-125 transition-transform "
                       viewBox="0 0 24 24"
                     >
                       <path
