@@ -90,6 +90,7 @@ const Navbar = () => {
               toggle();
               TogglehiddenOverflow();
             }}
+            className="text-white"
           />
         </div>
         <Link onClick={() => scrollToSection("hero")} href={"/"}>
