@@ -92,10 +92,27 @@ const Skills = () => {
       img: "github.png",
       desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
     },
-    "Node.js": {
+    "node.js": {
       img: "nodejs.png",
       desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
     },
+    "express.js": {
+      img: "express.png",
+      desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
+    },
+    bash: {
+      img: "bash.png",
+      desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
+    },
+    rust: {
+      img: "rust.png",
+      desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
+    },
+    flutter: {
+      img: "flutter.png",
+      desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
+    },
+
   };
   let data = Object.entries(dat);
   const [hoveredItem, setHoveredItem] = useState(null);
