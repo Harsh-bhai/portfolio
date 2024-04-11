@@ -87,7 +87,7 @@ const MainSection = () => {
               </button>
             <Link
               href={
-                "https://drive.google.com/file/d/12EsZba_m8CJ3UB6Beo77B73dkr4VBT55/view?usp=sharing"
+                "https://drive.google.com/file/d/1OClSFr2mz-bLpU3x5ltGMXnV6w-x8zQi/view?usp=sharing"
               }
             >
               <a target={"_blank"}>
