@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 import dat from "../data/allprojects.json";
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
 gsap.registerPlugin(ScrollTrigger);

@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import Socials from "./socials";
 import gsap from "gsap";
 import { IoIosArrowDown } from "react-icons/io";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
@@ -39,7 +37,7 @@ const MainSection = () => {
     if(!isMobile){
           // Set the initial position of the mask (fully covering the boy image)
           gsap.set(".whiteimg", { clipPath: 'inset(0% 0% 0% 0%)' })
-          timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
+          // timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
           timeline.from(".main",{opacity:0,ease:"power1",duration:1.5})
           timeline.from(".oval", {y:"-1000%", opacity:0, duration: 3, ease: "power1"}, "<.5")
           // Reveal the boy image using a clipping mask
@@ -89,7 +87,7 @@ const MainSection = () => {
               </button>
             <Link
               href={
-                "https://drive.google.com/file/d/1L9cNLxiTJwcHMAH8H7J60dSglMVQOyyd/view?usp=sharing"
+                "https://drive.google.com/file/d/12EsZba_m8CJ3UB6Beo77B73dkr4VBT55/view?usp=sharing"
               }
             >
               <a target={"_blank"}>
