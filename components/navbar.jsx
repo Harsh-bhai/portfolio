@@ -69,9 +69,8 @@ const Navbar = () => {
   }, []);
 
   const TogglehiddenOverflow = () => {
-    document.body.classList.contains("overflow-hidden")
-      ? document.body.classList.remove("overflow-hidden")
-      : document.body.classList.add("overflow-hidden");
+    if(document.body.classList.contains("overflow-hidden"))
+      document.body.classList.remove("overflow-hidden")
   };
 
   const ToggleFixedProperty = () => {
