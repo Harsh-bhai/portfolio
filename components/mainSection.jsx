@@ -37,7 +37,7 @@ const MainSection = () => {
     if(!isMobile){
           // Set the initial position of the mask (fully covering the boy image)
           gsap.set(".whiteimg", { clipPath: 'inset(0% 0% 0% 0%)' })
-          // timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
+          timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
           timeline.from(".main",{opacity:0,ease:"power1",duration:1.5})
           timeline.from(".oval", {y:"-1000%", opacity:0, duration: 3, ease: "power1"}, "<.5")
           // Reveal the boy image using a clipping mask
