@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { SiDiscord } from "react-icons/si";
+import { SiDiscord,SiLeetcode  } from "react-icons/si";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
 
@@ -195,6 +195,37 @@ try {
                   </a>
                 </Link>
                 <Link
+                  href={"https://leetcode.com/harshdewangan2019/"}
+                  className="text-gray-500"
+                >
+                  <a target="_blank">
+                    <SiLeetcode className="text-cyan-600 text-xl hover:scale-125 transition-transform md:text-4xl cursor-pointer hover:text-yellow-500" />
+                  </a>
+                </Link>
+                <Link
+                  href={"https://www.linkedin.com/in/harsh-dewangan-3a44b5232/"}
+                  className="ml-3 text-cyan-500 "
+                >
+                  <a target="_blank">
+                    {" "}
+                    <svg
+                      fill="currentColor"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="0"
+                      className="md:w-8 w-5 hover:text-white cursor-pointer hover:scale-125 transition-transform "
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="none"
+                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                      ></path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                  </a>
+                </Link>
+                <Link
                   href={
                     "https://www.facebook.com/profile.php?id=100014142857134  "
                   }
@@ -240,29 +271,7 @@ try {
                     </svg>
                   </a>
                 </Link>
-                <Link
-                  href={"https://www.linkedin.com/in/harsh-dewangan-3a44b5232/"}
-                  className="ml-3 text-cyan-500 "
-                >
-                  <a target="_blank">
-                    {" "}
-                    <svg
-                      fill="currentColor"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="0"
-                      className="md:w-8 w-5 hover:text-white cursor-pointer hover:scale-125 transition-transform "
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="none"
-                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                      ></path>
-                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                    </svg>
-                  </a>
-                </Link>
+
               </span>
             </div>
           </div>

@@ -96,7 +96,7 @@ const Navbar = () => {
         <Link onClick={() => scrollToSection("hero")} href={"/"}>
           <div className="flex title-font font-medium items-center md:justify-start justify-center text-cyan-900 md:z-10 my-4 md:my-0 mx-10 cursor-pointer">
             {/* <img src="/logo.png" className='h-12 ' alt="" /> */}
-            <span className="ml-3 text-cyan-400 text-2xl">Portfolio</span>
+            <span className="ml-3 text-cyan-400 text-2xl ">Portfolio</span>
           </div>
         </Link>
         <div
@@ -121,7 +121,7 @@ const Navbar = () => {
                   TogglehiddenOverflow();
                   scrollToSection("about");
                 }}
-                className="hover:text-cyan-400  text-cyan-600 cursor-pointer"
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
                 About
               </div>
@@ -133,7 +133,7 @@ const Navbar = () => {
                   TogglehiddenOverflow();
                   scrollToSection("skills");
                 }}
-                className="hover:text-cyan-400  text-cyan-600 cursor-pointer"
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
                 Skills
               </div>
@@ -145,7 +145,7 @@ const Navbar = () => {
                   TogglehiddenOverflow();
                   scrollToSection("project");
                 }}
-                className="hover:text-cyan-400  text-cyan-600 cursor-pointer"
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
                 Projects
               </div>
@@ -157,7 +157,7 @@ const Navbar = () => {
                   TogglehiddenOverflow();
                   scrollToSection("contact");
                 }}
-                className="hover:text-cyan-400  text-cyan-600 cursor-pointer"
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
                 Connect
               </div>

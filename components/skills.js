@@ -127,13 +127,13 @@ const Skills = () => {
       <h1 className="skillstitle text-center sm:text-5xl text-3xl font-medium title-font mb-10 text-white">
         Skills
       </h1>
-      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-8 grid-cols-1 mx-8 place-items-center">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-8 grid-cols-1 mx-8 place-items-center md:mx-40">
         {data.map((item, index) => {
           return (
             <img
               key={index}
               src={`/${item[1].img}`}
-              className="skillscontent w-64 h-64 hover:scale-110 transition-transform hover:shadow-lg  hover:shadow-cyan-500 delay-100 duration-300"
+              className="skillscontent w-52 h-52 hover:scale-110 transition-transform hover:shadow-lg  hover:shadow-cyan-500 delay-100 duration-300"
               alt={item[0]}
             />
           );

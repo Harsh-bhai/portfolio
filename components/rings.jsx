@@ -6,10 +6,7 @@ const Rings = () => {
   return (
     <div >
       {" "}
-      <img
-        src="ring.png"
-        className="md:h-6 md:w-6 w-3 h-3 fixed animate-pulse   top-[36rem] left-[3rem] -rotate-12   "
-      ></img>
+
       <img
         src="ring.png"
         className="md:h-6 md:w-6 w-3 h-3 fixed animate-pulse   top-[5rem] right-[27rem] rotate-45   "
@@ -23,10 +20,7 @@ const Rings = () => {
         src="ring.png"
         className="md:h-6 md:w-6 w-3 h-3 fixed animate-pulse   top-[22rem] right-[3rem] -rotate-45   "
       ></img>
-      <img
-        src="ring.png"
-        className="md:h-6 md:w-6 w-3 h-3 fixed animate-pulse   top-60 left-24 rotate-6  "
-      ></img>
+
     </div>
   );
 };

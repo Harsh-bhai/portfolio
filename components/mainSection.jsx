@@ -39,9 +39,9 @@ const MainSection = () => {
           gsap.set(".whiteimg", { clipPath: 'inset(0% 0% 0% 0%)' })
           timeline.from(".wave",{opacity:0,duration:1,ease:"power4"})
           timeline.from(".main",{opacity:0,ease:"power1",duration:1.5})
-          timeline.from(".oval", {y:"-1000%", opacity:0, duration: 3, ease: "power1"}, "<.5")
+          timeline.from(".oval", {y:"-1000%", opacity:0, duration: 3, ease: "power1"}, "-=3.5")
           // Reveal the boy image using a clipping mask
-          timeline.from(".whiteimg", { clipPath: 'inset(0% 0% 100% 0%)',duration:3},"-=2.2")
+          timeline.from(".whiteimg", { clipPath: 'inset(0% 0% 100% 0%)',duration:3},"-=2.6")
           timeline.from(".scrolldown",{opacity:0,duration:1},"-=1.5")
     }
        
@@ -53,6 +53,7 @@ const MainSection = () => {
 
   return (
     <section id="hero" className="h-screen lg:h-fit relative w-screen mx-auto flex px-5 py-24 md:py-16 md:flex-row flex-col items-center justify-evenly">
+      
       <div className="">
         <div className="maindiv lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
           <h1 className="text-cyan-500 title-font sm:text-5xl text-3xl mb-4 font-medium  animate-fadein">
@@ -77,9 +78,9 @@ const MainSection = () => {
           <p className="mb-8 text-cyan-500 leading-relaxed">
             Pursuing B.Tech from Bhilai Institute Of Technology ,Durg .<br />
             Know more about me -
-            <Link href={"/about"}>
-              <a className="text-white  font-bold"> Here</a>
-            </Link>{" "}
+            <span onClick={() => scrollToSection("about")} >
+              <a className="text-white cursor-pointer font-bold"> Here</a>
+            </span>{" "}
           </p>
           <div className="flex justify-center">
               <button onClick={() => scrollToSection("contact")} className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outlin6-no6 animate-pulsee hover: hover:text-cyan-500 hover:bg-white rounded-full text-xs space-x-1 md:text-lg">
