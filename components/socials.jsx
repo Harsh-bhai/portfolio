@@ -7,7 +7,7 @@ import { SiDiscord,SiLeetcode } from "react-icons/si";
 import Link from "next/link";
 const Socials = () => {
   return (
-    <div className="md:flex flex-col hidden space-y-14 md:ml-10 fixed left-0 top-40 sm:mx-auto sm:mt-0 mt-2 justify-evenly md:justify-center sm:justify-start">
+    <div className="md:flex flex-col hidden z-50 space-y-14 md:ml-10 fixed left-0 top-40 sm:mx-auto sm:mt-0 mt-2 justify-evenly md:justify-center sm:justify-start">
     <Link
       href={"https://github.com/Harsh-bhai "}
       className="text-cyan-500 "
