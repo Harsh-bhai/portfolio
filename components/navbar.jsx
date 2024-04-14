@@ -43,7 +43,7 @@ const Navbar = () => {
     ScrollTrigger.create({
       trigger: ".maindiv",
       start: "top 20%",
-      end: "+=9999px", // Set to a large value to make it effectively infinite
+      end: "+=999999px", // Set to a large value to make it effectively infinite
       toggleClass: {
         targets: ".mainnav",
         className: "bg-gray-800",
@@ -114,7 +114,6 @@ const Navbar = () => {
             <AiFillCloseCircle className="text-4xl  font-extralight md:hidden" />
           </span>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0 ">
-            <Link href={"/"}>
               <div
                 onClick={() => {
                   toggle();
@@ -125,8 +124,6 @@ const Navbar = () => {
               >
                 About
               </div>
-            </Link>
-            <Link href={"/"}>
               <div
                 onClick={() => {
                   toggle();
@@ -137,8 +134,6 @@ const Navbar = () => {
               >
                 Skills
               </div>
-            </Link>
-            <Link href={"/"}>
               <div
                 onClick={() => {
                   toggle();
@@ -149,8 +144,16 @@ const Navbar = () => {
               >
                 Projects
               </div>
-            </Link>
-            <Link href={"/"}>
+              <div
+                onClick={() => {
+                  toggle();
+                  TogglehiddenOverflow();
+                  scrollToSection("certifications");
+                }}
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
+              >
+                Certifications
+              </div>
               <div
                 onClick={() => {
                   toggle();
@@ -161,7 +164,6 @@ const Navbar = () => {
               >
                 Connect
               </div>
-            </Link>
           </div>
         </div>
         {/* <button class=" text-white bg-cyan-500  mr-40  py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Button</button> */}

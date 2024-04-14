@@ -8,6 +8,7 @@ import Contact from "../components/contact";
 import Project from "../components/project";
 import Socials from "../components/socials";
 import Email from "../components/email";
+import CertificationGrid from "../components/certificationGrid";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Skills />
         <Project />
+        <CertificationGrid/>
         <Contact />
       </section>
     </div>
