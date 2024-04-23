@@ -55,17 +55,17 @@
     }
   }, 
 
-  "Snakegame": {
-    "type": "Game",
-    "name": "Snake game",
-    "desc": "This is a 2D snake game created using python",
-    "img":"snake.jpg",
+  "Chatapp": {
+    "type": "Chat Application",
+    "name": "ChatApp",
+    "desc": "This is a chat application based on flutter and firebase",
+    "img":"chatapp.png",
     "meta":{
-      "maindesc":"This is a 2D snake game created using python",
-    "tech":"Python ,pygame library"
+      "maindesc":"This is a chat application based on flutter and firebase",
+    "tech":"Flutter ,Firebase Dart"
     },
     "Links":{
-      "link":"https://github.com/Harsh-bhai/Snake-game",
+      "link":"https://github.com/Harsh-bhai/chatapp",
     "live":null
     }
   },
