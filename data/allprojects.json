@@ -19,7 +19,7 @@
     "desc": "PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allow user to create, modify playlist on the basis of TAGS",
     "img":"playlistpilot.jpg",
     "meta":{
-      "maindesc":"PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allows user to create, modify playlist on the basis of TAGS.This application makes it easy to sort through large music libraries by enabling the use of tags to categorize songs by artist name, band name, genre, moods, and much more.",
+      "maindesc":"PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allows user to create, modify playlist on the basis of TAGS.This application makes it easy to sort through large music libraries.",
     "tech":"Next.js ,Tailwind Css ,JavaScript ,Node.js ,MongoDB."
     },
     "Links":{
@@ -47,7 +47,7 @@
     "desc": "QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc..",
     "img":"qrms.png",
     "meta":{
-      "maindesc":"QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc. Hence it reduces the manual work done by teachers by automatically generating quarterly report.",
+      "maindesc":"QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc. Hence it reduces the manual work by automatically generating quarterly report.",
     "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
     },
     "Links":{
@@ -62,7 +62,7 @@
     "img":"chatapp.png",
     "meta":{
       "maindesc":"This is a chat application based on flutter and firebase",
-    "tech":"Flutter ,Firebase Dart"
+    "tech":"Flutter ,Firebase, Dart, Android."
     },
     "Links":{
       "link":"https://github.com/Harsh-bhai/chatapp",
@@ -70,17 +70,17 @@
     }
   },
 
-   "BhaskarDentalCare": {
-    "type": "Dental Clinic",
-    "name": "Bhaskar Dental Care",
-    "desc": "Bhaskar Dental Care is a hospital management website used to manage patients etc.",
-    "img":"dental.jpg",
+   "ExpenseTracker": {
+    "type": "Finance Tracker",
+    "name": "Expense Tracker",
+    "desc": "This application helps you keep track of your Expenses and Income. ",
+    "img":"expense.png",
     "meta":{
-      "maindesc":"Bhaskar Dental Care is a Portfolio website and a hospital management website used to manage patients etc.",
-    "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
+      "maindesc":"This application helps you keep track of your Expenses and Income. It gets the data from the Bank transaction SMS. You can analyze your expenses and Income.",
+    "tech":"Flutter ,Dart, Android."
     },
     "Links":{
-      "link":"https://github.com/Harsh-bhai/Dental-clinic",
+      "link":"https://github.com/Harsh-bhai/expense-tracker-app",
     "live":null
     }
   }

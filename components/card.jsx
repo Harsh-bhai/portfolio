@@ -115,7 +115,7 @@ const Card = () => {
                 <p className="leading-relaxed text-base text-white">
                   {item[1].meta.maindesc}
                 </p>
-                <div className="flex md:flex-row flex-col justify-center items-center md:space-x-10 md:space-y-0 space-y-6 ">
+                <div className="flex justify-center items-center md:space-x-10 space-x-4 ">
                   <a
                     href={item[1].Links.link}
                     target="_blank"

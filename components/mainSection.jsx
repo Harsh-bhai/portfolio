@@ -42,7 +42,7 @@ const MainSection = () => {
         { y: "-1000%", opacity: 0, duration: 3, ease: "power1" },
         "-=3.5"
       );
-      // Reveal the boy image using a clipping mask
+      // Reveal the boy image using a clipping <mask></mask>
       timeline.from(
         ".whiteimg",
         { clipPath: "inset(0% 0% 100% 0%)", duration: 3 },
