@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
+  const skillsRef = useRef(null);
   useEffect(() => {
+    const elements = skillsRef.current.querySelectorAll(".skillscontent");
     gsap.from(".skillstitle", {
       opacity: 0,
       y: 50,
@@ -29,6 +31,18 @@ const Skills = () => {
         end: "top 20%",
       },
     });
+
+    // elements.forEach((element) => {
+    //   const hoverAnimation = gsap.to(element, {
+    //     scale: 1.1,
+    //     duration: 0.4,
+    //     paused: true,
+    //     ease: "elastic"
+    //   });
+
+    //   element.addEventListener("mouseenter", () => hoverAnimation.play());
+    //   element.addEventListener("mouseleave", () => hoverAnimation.reverse());
+    // });
   }, []);
   let dat = {
     "Next.js": {
@@ -112,7 +126,6 @@ const Skills = () => {
       img: "flutter.png",
       desc: "What is C programming language used for? The C language is a high-level, general-purpose programming language. It provides a straightforward, consistent, powerful interface for programming systems.",
     },
-
   };
   let data = Object.entries(dat);
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -127,14 +140,14 @@ const Skills = () => {
       <h1 className="skillstitle text-center sm:text-5xl text-3xl font-medium title-font mb-10 text-white">
         Skills
       </h1>
-      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-8 grid-cols-1 mx-8 place-items-center md:mx-40 ">
+      <div ref={skillsRef}   className="grid  md:grid-cols-2 lg:grid-cols-4 gap-8 grid-cols-1 mx-8 place-items-center md:mx-40 ">
         {data.map((item, index) => {
           return (
             <img
               key={index}
               src={`/${item[1].img}`}
               className="skillscontent  w-52 h-52 hover:scale-110 transition-transform duration-200 hover:shadow-lg  hover:shadow-cyan-500 delay-100 "
-              alt={item[0]}
+              alt={item[0]} 
             />
           );
         })}

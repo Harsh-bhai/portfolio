@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {  
       screens: {
-      'Ltablet': '1105px',
+      'Ltablet': '1101rem',
     },
       fontFamily: {
         primary:['Dancing Script', "cursive"],
@@ -24,6 +24,7 @@ module.exports = {
         translateyoval2: "translateyoval2 1s ease-out",
         wipedown:"wipedown 1s ease-out",
         blob: "blob 7s infinite",
+        bubbleMove: "bubbleMove 4s cubic-bezier(0.42, 0, 0.58, 1) infinite",
       },
 
       keyframes: {
@@ -64,6 +65,13 @@ module.exports = {
           '100%': {
             height:'100%'
           }
+        },
+         bubbleMove: {
+          "0%": { transform: "translate(-1rem, 0)" }, 
+          "25%": { transform: "translate(-1rem, 1rem)" }, 
+          "50%": { transform: "translate(1rem, 1rem)"} ,
+          "75%": { transform: "translate(1rem, -1rem)"} ,
+          "100%": { transform: "translate(-1rem, 0)"},
         }
       }
     },

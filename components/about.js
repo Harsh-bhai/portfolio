@@ -50,7 +50,7 @@ const About = () => {
       <section id="about" className="relative text-gray-600 body-font">
       <img
           src="halfwave.png"
-          className="absolute w-[70%] md:w-[35rem] top-20 md:top-0  right-0 rotate-180   opacity-50 -z-20 wave"
+          className="absolute w-[70%] md:w-[35rem] top-20 md:top-0  right-0 rotate-180   opacity-50 -z-20 wave "
           alt=""
         />
         <div className=" flex px-5 py-24 md:py-16 justify-center flex-col md:mx-40">

@@ -46,7 +46,7 @@ const Navbar = () => {
       end: "+=999999px", // Set to a large value to make it effectively infinite
       toggleClass: {
         targets: ".mainnav",
-        className: "bg-gray-800",
+        className: "bg-gray-900",
       },
     });
     // ScrollTrigger.create({
