@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { IoIosArrowDown } from "react-icons/io";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import Image from "next/image";
 gsap.registerPlugin(ScrollToPlugin);
 
 const MainSection = () => {
@@ -36,7 +37,7 @@ const MainSection = () => {
       // Set the initial position of the mask (fully covering the boy image)
       gsap.set(".whiteimg", { clipPath: "inset(0% 0% 0% 0%)",opacity:1 });
       timeline.from(".wave", { opacity: 0, duration: 1, ease: "power4" });
-      timeline.from(".main", { opacity: 0, ease: "power1", duration: 1.5 });
+      timeline.to(".main", { opacity: 1, ease: "power1", duration: 1.5 });
       timeline.from(
         ".oval",
         { y: "-1000%", opacity: 0, duration: 3, ease: "power1" },
@@ -58,7 +59,7 @@ const MainSection = () => {
       className="h-screen lg:h-fit relative w-screen mx-auto flex px-5 py-24 md:py-16 md:flex-row flex-col items-center justify-evenly"
     >
       <div className="">
-        <div className="maindiv lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
+        <div className="maindiv opacity-0 lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
           <h1 className="text-cyan-500 title-font sm:text-5xl text-3xl mb-4 font-medium  animate-fadein">
             <span className="md:text-3xl text-xl text-white mx-1">
               Hi! I am
@@ -118,7 +119,7 @@ const MainSection = () => {
         <img
           className="object-cover object-center rounded  -translate-y-[6.4rem] hidden lg:block md:h-[50rem] brightness-90 transition-transform whiteimg opacity-0"
           alt="hero"
-          src="white3min.png"
+          src="/white3min.webp"
         />
         <img
           src="oval 2.png"
