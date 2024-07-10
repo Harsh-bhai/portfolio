@@ -40,7 +40,7 @@ const MainSection = () => {
       timeline.to(".main", { opacity: 1, ease: "power1", duration: 1.5 });
       timeline.from(
         ".oval",
-        { y: "-1000%", opacity: 0, duration: 3, ease: "power1" },
+        { y: "-1000%", opacity: 1, duration: 3, ease: "power1" },
         "-=3.5"
       );
       // Reveal the boy image using a clipping <mask></mask>
