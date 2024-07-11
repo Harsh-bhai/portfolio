@@ -59,7 +59,7 @@ const MainSection = () => {
       className="h-screen lg:h-fit relative w-screen mx-auto flex px-5 py-24 md:py-16 md:flex-row flex-col items-center justify-evenly"
     >
       <div className="">
-        <div className="maindiv opacity-0 lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
+        <div className="maindiv md:opacity-0 lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center md:mx-32 lg:-translate-y-10 main lg:mt-0 mt-20">
           <h1 className="text-cyan-500 title-font sm:text-5xl text-3xl mb-4 font-medium  animate-fadein">
             <span className="md:text-3xl text-xl text-white mx-1">
               Hi! I am
