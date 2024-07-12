@@ -35,7 +35,7 @@ const MainSection = () => {
 
     if (!isMobile) {
       // Set the initial position of the mask (fully covering the boy image)
-      gsap.set(".whiteimg", { clipPath: "inset(0% 0% 0% 0%)",opacity:1 });
+      gsap.set(".whiteimg", { clipPath: "inset(0% 0% 0% 0%)", opacity: 1 });
       timeline.from(".wave", { opacity: 0, duration: 1, ease: "power4" });
       timeline.to(".main", { opacity: 1, ease: "power1", duration: 1.5 });
       timeline.from(
@@ -92,17 +92,18 @@ const MainSection = () => {
           <div className="flex justify-center">
             <button
               onClick={() => scrollToSection("contact")}
-              className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outlin6-no6 animate-pulsee hover: hover:text-cyan-500 hover:bg-white rounded-full text-xs space-x-1 md:text-lg"
+              className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outline-none  hover:bg-white hover:text-cyan-500 hover:shadow-lg hover:shadow-cyan-500/50 rounded-full text-xs space-x-1 md:text-lg transition duration-300 ease-in-out"
             >
               <span>Hire</span> <span>Me</span>
             </button>
+
             <Link
               href={
                 "https://drive.google.com/file/d/1pvvXIpKUZOMB7qxVZaTAuzQsa7UwxkHe/view?usp=sharing"
               }
             >
               <a target={"_blank"}>
-                <button className="ml-4  text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white rounded-full text-xs md:text-lg">
+                <button className="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white hover:shadow-lg hover:shadow-cyan-500/50 rounded-full text-xs md:text-lg transition duration-300 ease-in-out">
                   Resume
                 </button>
               </a>

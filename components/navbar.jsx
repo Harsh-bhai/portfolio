@@ -16,6 +16,7 @@ import Link from "next/link";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import AudioPlayer from "./audioplayer";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = () => {
@@ -164,6 +165,21 @@ const Navbar = () => {
               >
                 Connect
               </div>
+              <Link
+              href={
+                "https://drive.google.com/file/d/1pvvXIpKUZOMB7qxVZaTAuzQsa7UwxkHe/view?usp=sharing"
+              }
+            >
+              <a target={"_blank"}>
+              <div
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
+              >
+                Resume
+              </div>
+              </a>
+            </Link>
+              
+              <AudioPlayer src="music.mp3" className={"absolute top-2 right-5 hidden md:block animate-pulse"}/>
           </div>
         </div>
         {/* <button class=" text-white bg-cyan-500  mr-40  py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Button</button> */}
