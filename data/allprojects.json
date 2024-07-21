@@ -47,7 +47,7 @@
     "desc": "QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc..",
     "img":"qrms.png",
     "meta":{
-      "maindesc":"QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc. Hence it reduces the manual work by automatically generating quarterly report.",
+      "maindesc":"QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc, reduces the manual work by automatically generating quarterly report.",
     "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
     },
     "Links":{

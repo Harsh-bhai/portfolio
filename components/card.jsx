@@ -45,6 +45,7 @@ const Card = () => {
     setSelectedItemIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   let data = Object.entries(dat);
+
   return (
     <section className="projsection  flex flex-wrap -mx-4 -mb-10 lg:mx-10 justify-evenly">
       {data.map((item, index) => {
@@ -144,7 +145,7 @@ const Card = () => {
             <div className="rounded-lg h-64 overflow-hidden pointer-events-none">
               <img
                 alt="content"
-                className=" h-full w-full  delay-100 hover:delay-300    transition-transform"
+                className=" h-full w-full  delay-100 hover:delay-300  hover:scale-125  transition-transform"
                 src={`/${item[1].img}`}
               />
             </div>
