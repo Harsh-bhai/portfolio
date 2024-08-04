@@ -37,11 +37,10 @@ const About = () => {
   }, [])
   
   const info = [
-    "Hi, I'm Harsh Dewangan. I am a Computer Science and Engineering student at Bhilai Institute of Technology Durg, driven by a passion for creating exceptional and user-friendly web experiences.",
-    "As a full-stack developer, I bring a unique blend of creativity and technical expertise to my projects. Also I have a great knowledge of Data Structures and Algorithms(DSA).",
+    "Hi, I'm Harsh Dewangan. I am a Computer Science and Engineering student at Bhilai Institute of Technology Durg, driven by a passion for creating exceptional and user-friendly web and android experiences.",
+    "As a Android and web developer, I bring a unique blend of creativity and technical expertise to my projects. Also I have a great knowledge of Data Structures and Algorithms(DSA).",
     "My enthusiasm for learning and detail-oriented approach make me a quick learner, always eager to take on new challenges.",
     "With a positive attitude and a proactive problem-solving approach, I am confident that my work ethic and dedication make me a valuable addition to any team.",
-    "My journey in tech is not just about writing lines of code; it's about weaving a story of innovation, collaboration, and continuous growth.",
     "With every line of code, I embrace the art of problem-solving. I am not just a developer; I am a creator of solutions, fueled by curiosity and passion.",
     "I am actively seeking an internship opportunity to apply my skills in a professional setting, contribute to a team, and learn from experienced professionals.",
   ];

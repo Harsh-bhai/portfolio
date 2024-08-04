@@ -50,23 +50,7 @@ const Navbar = () => {
         className: "bg-gray-800",
       },
     });
-    // ScrollTrigger.create({
-    //   trigger: ".navitems",
-    //   markers:true,
-    //   start: "top 6%",
-    //   end: '+=9999px', // Set to a large value to make it effectively infinite
-    //   pin:".whiteimg",
-    //   pinSpacing:false
-    // })
-    // ScrollTrigger.create({
-    //   trigger: ".maindiv",
-    //   start: "top top",
-    //   end: '+=9999px', // Set to a large value to make it effectively infinite
-    //   toggleClass:{
-    //     targets:'.mainnav',
-    //     className:'bg-gray-800'
-    //   },
-    // })
+
   }, []);
 
   const TogglehiddenOverflow = () => {
@@ -143,88 +127,7 @@ const Navbar = () => {
             ))}
             <AudioPlayer src="music.mp3" className={"absolute top-2 right-5 hidden md:block animate-pulse"} />
           </div>
-          {/* <div className="flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0 ">
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("about");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                About
-              </div>
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("journey");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Journey
-              </div>
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("skills");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Skills
-              </div>
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("project");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Projects
-              </div>
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("certifications");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Certifications
-              </div>
-              <div
-                onClick={() => {
-                  toggle();
-                  TogglehiddenOverflow();
-                  scrollToSection("contact");
-                }}
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Connect
-              </div>
-              <Link
-              href={
-                "https://drive.google.com/file/d/1pvvXIpKUZOMB7qxVZaTAuzQsa7UwxkHe/view?usp=sharing"
-              }
-            >
-              <a target={"_blank"}>
-              <div
-                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
-              >
-                Resume
-              </div>
-              </a>
-            </Link>
-              
-              <AudioPlayer src="music.mp3" className={"absolute top-2 right-5 hidden md:block animate-pulse"}/>
-          </div> */}
         </div>
-        {/* <button class=" text-white bg-cyan-500  mr-40  py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Button</button> */}
-        {/* <div className=" z-20 account absolute top-1  md:top-[-5px] right-0 text-4xl p-6 cursor-pointer ">
-          <MdAccountCircle />
-        </div> */}
       </div>
     </div>
   );

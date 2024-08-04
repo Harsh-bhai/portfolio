@@ -70,8 +70,10 @@ const MainSection = () => {
                 <DynamicTypewriter
                   options={{
                     strings: [
+                      "Flutter Developer",
                       "Full Stack Developer",
                       "Programmer",
+                      "Leetcoder",
                       "Student",
                       "Data Scientist Enthusiast",
                     ],
