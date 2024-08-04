@@ -115,6 +115,35 @@ const Navbar = () => {
             <AiFillCloseCircle className="text-4xl  font-extralight md:hidden" />
           </span>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0 ">
+            {[
+              { text: "About", section: "about" },
+              { text: "Journey", section: "journey" },
+              { text: "Skills", section: "skills" },
+              { text: "Projects", section: "project" },
+              { text: "Certifications", section: "certifications" },
+              { text: "Connect", section: "contact" },
+              { text: "Resume", href: "https://drive.google.com/file/d/1pvvXIpKUZOMB7qxVZaTAuzQsa7UwxkHe/view?usp=sharing" },
+            ].map((item) => (
+              <div
+                key={item.text}
+                onClick={() => {
+                  toggle();
+                  TogglehiddenOverflow();
+                  scrollToSection(item.section || "");
+                }}
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
+              >
+                {item.section && item.text}
+                {item.href ? (
+                  <a href={item.href} target="_blank" rel="noreferrer">
+                    {item.text}
+                  </a>
+                ) : null}
+              </div>
+            ))}
+            <AudioPlayer src="music.mp3" className={"absolute top-2 right-5 hidden md:block animate-pulse"} />
+          </div>
+          {/* <div className="flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0 ">
               <div
                 onClick={() => {
                   toggle();
@@ -124,6 +153,16 @@ const Navbar = () => {
                 className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
                 About
+              </div>
+              <div
+                onClick={() => {
+                  toggle();
+                  TogglehiddenOverflow();
+                  scrollToSection("journey");
+                }}
+                className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
+              >
+                Journey
               </div>
               <div
                 onClick={() => {
@@ -180,7 +219,7 @@ const Navbar = () => {
             </Link>
               
               <AudioPlayer src="music.mp3" className={"absolute top-2 right-5 hidden md:block animate-pulse"}/>
-          </div>
+          </div> */}
         </div>
         {/* <button class=" text-white bg-cyan-500  mr-40  py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Button</button> */}
         {/* <div className=" z-20 account absolute top-1  md:top-[-5px] right-0 text-4xl p-6 cursor-pointer ">

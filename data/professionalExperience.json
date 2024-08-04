@@ -20,5 +20,19 @@
       "Leveraged leadership skills as a full-stack web developer and team leader",
       "Used Mapbox API to visualize F.I.R. data."
     ]
+  },
+  "college": {
+    "company": "BIT Durg",
+    "role": "B.Tech, CSE (8.5 CGPA)",
+    "duration": "2021 - 2025",
+    "img": "bitdurg.png",
+    "points": []
+  },
+  "school": {
+    "company": "K.V.No.1 Raipur, (C.G.)",
+    "role": "XII CBSE (95.6%)",
+    "duration": "2009 - 2021",
+    "img": "kvs.jpg",
+    "points": []
   }
 }

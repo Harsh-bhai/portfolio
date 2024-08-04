@@ -8,26 +8,26 @@ gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
 
   useEffect(() => {
-    gsap.from(".experiencetitle", {
+    gsap.from(".journeytitle", {
       opacity: 0,
       y: 50,
       duration: 1,
       scrollTrigger: {
-        trigger: "#experience",
+        trigger: "#journey",
         start: 'top 80%',
         end: 'top 30%',
       },
     });
 
         // Scroll-triggered animation for the content
-        gsap.from(".experiencecontent", {
+        gsap.from(".journeycontent", {
           opacity: 0,
           ease : "elastic",
           y: 50,
           duration: 1,
           stagger: 0.7,
           scrollTrigger: {
-            trigger: "#experience",
+            trigger: "#journey",
             start: 'top 50%',
             end: 'top 20%',
           },
@@ -36,9 +36,9 @@ const Timeline = () => {
 
   let data = Object.values(experience)
   return (
-    <section id="experience" className="mt-16 relative">
-      <h1 className="experiencetitle text-center sm:text-5xl text-3xl font-medium title-font mb-10 text-white">
-        Professional Experience
+    <section id="journey" className="mt-16 relative">
+      <h1 className="journeytitle text-center sm:text-5xl text-3xl font-medium title-font mb-10 text-white">
+        Journey
       </h1>
       <div className="md:mx-36 bg-inherit py-6 flex flex-col justify-center sm:py-12">
     <div className="py-3 sm:mx-auto w-full px-2 sm:px-0">
@@ -48,7 +48,7 @@ const Timeline = () => {
         {
           data.map((exp, index) => (
             <TimeLineCard
-              className="experiencecontent"
+              className="journeycontent"
               key={index}
               leftCard={index % 2 === 0}
               ImgSrc={exp.img}
