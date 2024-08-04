@@ -1,0 +1,24 @@
+{
+  "SjainVentures": {
+    "company": "Sjain Ventures",
+    "role": "SDE Intern (Flutter)",
+    "duration": "May 2024 - August 2024 ( 4 months )",
+    "img": "sjainavatar.jpg",
+    "points": [
+      "Designing and implementing user interfaces (UIs) using Flutter",
+      "Integrating various APIs seamlessly",
+      "Implementing a dark mode feature"
+    ]
+  },
+  "BIT": {
+    "company": "AICTE IDEA LAB",
+    "role": "Web Developer",
+    "duration": "Feb 2023 - April 2023 ( 2 months )",
+    "img": "aicte.png",
+    "points": [
+      "Developed a Next.js website for police to visually track crime records on a map, utilizing historical crime data.",
+      "Leveraged leadership skills as a full-stack web developer and team leader",
+      "Used Mapbox API to visualize F.I.R. data."
+    ]
+  }
+}

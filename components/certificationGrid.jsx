@@ -57,7 +57,7 @@ export default function CertificationGrid() {
       opacity: 0,
       y: 50,
       duration: 1,
-      stagger: 0.2,
+      stagger: 0.3,
       scrollTrigger: {
         // markers: true,
         trigger: ".certficationstitle",
@@ -70,7 +70,7 @@ export default function CertificationGrid() {
       opacity: 0,
       y: 50,
       duration: 1,
-      stagger: 0.2,
+      stagger: 0.3,
       scrollTrigger: {
         trigger: "#certifications",
         start: "top 90%",
@@ -79,9 +79,11 @@ export default function CertificationGrid() {
     });
   }, []);
 
-  const extras =["I have been a part of the Google Developer Students Club (GDSC) at BIT Durg as a web developer.",
-"I helped the team in organizing certain tech events in college.",
-"Solved 100+ problems on Leetcode.",]
+  const extras = [
+    "I have been a part of the Google Developer Students Club (GDSC) at BIT Durg as a web developer.",
+    "I helped the team in organizing certain tech events in college.",
+    "Solved 100+ problems on Leetcode.",
+  ];
 
   return (
     <section id="certifications" className="md:mx-40">
@@ -89,7 +91,7 @@ export default function CertificationGrid() {
         Extras
       </h1>
       <div className="pointwise">
-      <PointwiseStatement points={extras} />
+        <PointwiseStatement points={extras} />
       </div>
       <h2 className="certficationstitle text-center sm:text-3xl text-3xl font-medium title-font mt-20 text-white">
         Certifications

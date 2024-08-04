@@ -24,8 +24,10 @@ const About = () => {
         // Scroll-triggered animation for the content
         gsap.from(".aboutcontent", {
           opacity: 0,
+          ease : "power1",
           y: 50,
           duration: 1,
+          stagger: 0.4,
           scrollTrigger: {
             trigger: "#about",
             start: 'top 50%',

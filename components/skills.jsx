@@ -27,7 +27,8 @@ const Skills = () => {
       opacity: 0,
       // y: 50,
       duration: 1,
-      stagger: 0.2,
+      stagger: 0.3,
+      // ease: "elastic",
       scrollTrigger: {
         trigger: "#skills",
         start: "top 50%",
