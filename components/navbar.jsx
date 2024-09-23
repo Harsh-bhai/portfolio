@@ -106,7 +106,7 @@ const Navbar = () => {
               { text: "Projects", section: "project" },
               { text: "Certifications", section: "certifications" },
               { text: "Connect", section: "contact" },
-              { text: "Resume", href: "https://drive.google.com/file/d/1pvvXIpKUZOMB7qxVZaTAuzQsa7UwxkHe/view?usp=sharing" },
+              { text: "Resume", href: "https://drive.google.com/file/d/13UmcP7QTiEfzlfp6gKE0jAm7pFf8RWvp/view?usp=sharing" },
             ].map((item) => (
               <div
                 key={item.text}

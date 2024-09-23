@@ -82,7 +82,7 @@ export default function CertificationGrid() {
   const extras = [
     "I have been a part of the Google Developer Students Club (GDSC) at BIT Durg as a web developer.",
     "I helped the team in organizing certain tech events in college.",
-    "Solved 100+ problems on Leetcode.",
+    "Solved 250+ problems on Leetcode.",
   ];
 
   return (
