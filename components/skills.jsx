@@ -67,11 +67,11 @@ const Skills = () => {
       >
         {Object.entries(data).map(([key, { img, desc }], index) => (
           <img
-          onMouseEnter={() => {enterHandler(index)}}
-          onMouseLeave={() => {exitHandler(index)}}
+          // onMouseEnter={() => {enterHandler(index)}}
+          // onMouseLeave={() => {exitHandler(index)}}
             key={index}
             src={`/${img}`}
-            className="skillscontent w-52 h-52 transition-transform duration-200 hover:shadow-lg hover:scale-110 hover:shadow-cyan-500 delay-100"
+            className="skillscontent w-52 h-52 transition-transform duration-200 hover:shadow-lg hover:scale-110 hover:shadow-cyan-500  ease-in"
             alt={key}
           />
         ))}

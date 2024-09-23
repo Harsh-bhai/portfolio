@@ -154,7 +154,7 @@ const Card = () => {
               <h2 className="title-font text-2xl font-medium text-white ">
                 {item[1].name}
               </h2>
-              <p className="leading-relaxed text-base text-cyan-500">
+              <p className="leading-relaxed font-bold text-cyan-500">
                 {item[1].desc}
               </p>
             </div>

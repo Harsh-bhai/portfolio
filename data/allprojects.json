@@ -1,89 +1,88 @@
 {
-  "Vmart": {
-    "type": "E-commerece",
-    "name": "V-Mart",
-    "desc": "V-Mart is an Online E-commerece website used to sell groceriers ,fruits and many more ...",
-    "img":"vmartfull.jpg",
-    "meta":{
-      "maindesc":"V-Mart is an Online E-commerece website used to sell groceriers ,fruits and many more ...",
-    "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
+  "CrimeMapping": {
+    "type": "Interactive data visualizer",
+    "name": "Crime Mapping",
+    "desc": "Web Application",
+    "img": "crimemapping.jpg",
+    "meta": {
+      "maindesc": "Created a website for Police to track crime record visually on Map, based on the previous crime. It maps crime on the basis of previous FIR details",
+      "tech": "Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
     },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/Ecommerece",
-    "live":"https://vmart.netlify.app"
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/crime-mapping",
+      "live": "https://crimemapper.netlify.app"
+    }
+  },
+
+  "ExpenseTracker": {
+    "type": "Finance Tracker",
+    "name": "Expense Tracker",
+    "desc": "Android Application",
+    "img": "landscape expense.jpg",
+    "meta": {
+      "maindesc": "This application helps you keep track of your Expenses and Income. It gets the data from the Bank transaction SMS. You can analyze your expenses and Income.",
+      "tech": "Flutter ,Dart, Android."
+    },
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/expense-tracker-app",
+      "live": null
     }
   },
   "PlaylistPilot": {
     "type": "Music Organzier",
     "name": "PlaylistPilot",
-    "desc": "PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allow user to create, modify playlist on the basis of TAGS",
-    "img":"playlistpilot.jpg",
-    "meta":{
-      "maindesc":"PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allows user to create, modify playlist on the basis of TAGS.This application makes it easy to sort through large music libraries.",
-    "tech":"Next.js ,Tailwind Css ,JavaScript ,Node.js ,MongoDB."
+    "desc": "Web Application",
+    "img": "playlistpilot.jpg",
+    "meta": {
+      "maindesc": "PlaylistPilot is a Music Organizer web application. It is based on TAG system, it allows user to create, modify playlist on the basis of TAGS.This application makes it easy to sort through large music libraries.",
+      "tech": "Next.js ,Tailwind Css ,JavaScript ,Node.js ,MongoDB."
     },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/PlaylistPilot",
-    "live":"https://playlistpilot.netlify.app"
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/PlaylistPilot",
+      "live": "https://playlistpilot.netlify.app"
     }
   },
-  "CrimeMapping": {
-    "type": "Interactive data visualizer",
-    "name": "Crime Mapping",
-    "desc": "Created a website for Police to track crime record visually on Map, based on the previous crime.",
-    "img":"crimemapping.jpg",
-    "meta":{
-      "maindesc":"Created a website for Police to track crime record visually on Map, based on the previous crime. It maps crime on the basis of previous FIR details",
-    "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
-    },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/crime-mapping",
-    "live":"https://crimemapper.netlify.app"
-    }
-  }, 
-  "QRMS": {
-    "type": "Report Management System",
-    "name": "Quarterly Report Management System (QRMS)",
-    "desc": "QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc..",
-    "img":"qrms.png",
-    "meta":{
-      "maindesc":"QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc, reduces the manual work by automatically generating quarterly report.",
-    "tech":"Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
-    },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/quarterly-report-management-system"
-    }
-  }, 
 
   "Chatapp": {
     "type": "Chat Application",
     "name": "ChatApp",
-    "desc": "This is a chat application based on flutter and firebase",
-    "img":"chatapp.png",
-    "meta":{
-      "maindesc":"This is a chat application based on flutter and firebase",
-    "tech":"Flutter ,Firebase, Dart, Android."
+    "desc": "Android Application",
+    "img": "landscape chatapp.jpg",
+    "meta": {
+      "maindesc": "This is a chat application based on flutter and firebase",
+      "tech": "Flutter ,Firebase, Dart, Android."
     },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/chatapp",
-    "live":null
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/chatapp",
+      "live": null
+    }
+  },
+  "QRMS": {
+    "type": "Report Management System",
+    "name": "Quarterly Report Management System (QRMS)",
+    "desc": "Web Application",
+    "img": "qrms.png",
+    "meta": {
+      "maindesc": "QRMS is a web application for college,it is used to generate quarterly report on the basis of data submitted by Teachers, Students etc, reduces the manual work by automatically generating quarterly report.",
+      "tech": "Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
+    },
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/quarterly-report-management-system"
     }
   },
 
-   "ExpenseTracker": {
-    "type": "Finance Tracker",
-    "name": "Expense Tracker",
-    "desc": "This application helps you keep track of your Expenses and Income. ",
-    "img":"expense.png",
-    "meta":{
-      "maindesc":"This application helps you keep track of your Expenses and Income. It gets the data from the Bank transaction SMS. You can analyze your expenses and Income.",
-    "tech":"Flutter ,Dart, Android."
+  "Vmart": {
+    "type": "E-commerece",
+    "name": "V-Mart",
+    "desc": "Web Application",
+    "img": "vmartfull.jpg",
+    "meta": {
+      "maindesc": "V-Mart is an Online E-commerece website used to sell groceriers ,fruits and many more ...",
+      "tech": "Next.js ,Tailwind Css ,Strapi ,JavaScript ,Node.js ,PostgreSQL."
     },
-    "Links":{
-      "link":"https://github.com/Harsh-bhai/expense-tracker-app",
-    "live":null
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/Ecommerece",
+      "live": "https://vmart.netlify.app"
     }
   }
-  
 }
-

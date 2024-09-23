@@ -4,9 +4,9 @@ export default function CertificationCard({ title, image, link }) {
   return (
     
       <section
-        className="bg-gradient-to-br certficationscontent from-gray-800 via-gray-700 to-gray-800 rounded-lg shadow-md overflow-hidden hover:scale-110 transition-transform duration-200"
+        className="bg-gradient-to-br certficationscontent from-gray-800 via-gray-700 to-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-200 hover:scale-125" 
       >
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           <img
             src={image}
             alt={title}
