@@ -14,7 +14,7 @@ const TimeLineCard = ({ leftCard, ImgSrc, title, role, duration, desriptionArray
               <div className="flex items-center mb-4">
                 {/* <!-- Circle Avatar with Placeholder Image --> */}
                 <div className="relative flex-shrink-0">
-                  <div className="rounded-full overflow-hidden border-white border-4 size-10 md:size-20">
+                  <div className="rounded-full overflow-hidden border-white border-4 size-10 lg:size-20">
                     <img 
                       src={ImgSrc}
                       alt="Avatar"
@@ -25,7 +25,7 @@ const TimeLineCard = ({ leftCard, ImgSrc, title, role, duration, desriptionArray
                 {/* <!-- Time Section --> */}
                <div className="flex flex-col">
                <div className="ml-4">
-                  <p className="text-gray-300 font-bold text-2xl">{title}</p>
+                  <p className="text-gray-300 font-bold lg:text-2xl">{title}</p>
                 </div>
                <div className="ml-4">
                   <p className="text-gray-300 font-bold ">{role}</p>

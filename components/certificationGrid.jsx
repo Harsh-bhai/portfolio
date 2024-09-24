@@ -96,7 +96,7 @@ export default function CertificationGrid() {
       <h2 className="certficationstitle text-center sm:text-3xl text-3xl font-medium title-font mt-20 text-white">
         Certifications
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4 md:mb-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:mb-20 ">
         {certifications.map((cert, index) => (
           <CertificationCard key={index} {...cert} />
         ))}

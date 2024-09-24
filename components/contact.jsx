@@ -177,7 +177,7 @@ try {
             </div>
 
             <div className="container mx-auto py-10 px-5 flex flex-wrap flex-col sm:flex-row">
-              <span className="flex  md:space-x-20  sm:mx-auto sm:mt-0 mt-2 justify-evenly md:justify-center sm:justify-start">
+              <span className="flex  sm:space-x-20   sm:mx-auto sm:mt-0 mt-2 justify-evenly md:justify-center sm:justify-start">
                 <Link
                   href={"https://github.com/Harsh-bhai "}
                   className="text-cyan-500 "
