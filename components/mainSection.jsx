@@ -94,7 +94,7 @@ const MainSection = () => {
           <div className="flex justify-center">
             <button
               onClick={() => scrollToSection("contact")}
-              className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outline-none  hover:bg-white hover:text-cyan-500 hover:shadow-lg hover:shadow-cyan-500/50 rounded-full text-xs space-x-1 md:text-lg transition duration-300 ease-in-out"
+              className="flex text-white bg-cyan-500 border-0 py-1 px-6 items-center focus:outline-none  hover:bg-white hover:text-cyan-500 hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.7)] hover:shadow-cyan-500/50 rounded-full text-xs space-x-1 md:text-lg transition duration-300 ease-in-out"
             >
               <span>Hire</span> <span>Me</span>
             </button>
@@ -105,7 +105,7 @@ const MainSection = () => {
               }
             >
               <a target={"_blank"}>
-                <button className="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white hover:shadow-lg hover:shadow-cyan-500/50 rounded-full text-xs md:text-lg transition duration-300 ease-in-out">
+                <button className="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.7)] hover:shadow-cyan-500/50 rounded-full text-xs md:text-lg transition duration-300 ease-in-out">
                   Resume
                 </button>
               </a>
