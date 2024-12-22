@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { IoIosArrowDown } from "react-icons/io";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import Image from "next/image";
+import { RESUME_URL } from "../data/constants";
 gsap.registerPlugin(ScrollToPlugin);
 
 const MainSection = () => {
@@ -65,7 +66,7 @@ const MainSection = () => {
               Hi! I am
             </span>{" "}
             <br /> Harsh Dewangan
-            <p className="text-base md:text-2xl text-white my-2">
+            <span className="text-base md:text-2xl text-white my-2">
               {showTypewriter && (
                 <DynamicTypewriter
                   options={{
@@ -82,7 +83,7 @@ const MainSection = () => {
                   }}
                 />
               )}
-            </p>
+            </span>
           </h1>
           <p className="mb-8 text-cyan-500 leading-relaxed">
             Pursuing B.Tech from Bhilai Institute Of Technology ,Durg .<br />
@@ -99,11 +100,7 @@ const MainSection = () => {
               <span>Hire</span> <span>Me</span>
             </button>
 
-            <Link
-              href={
-                "https://drive.google.com/file/d/1GNy45ZTDTg66rg2OhShZtcflKOnsccwv/view?usp=sharing"
-              }
-            >
+            <Link href={RESUME_URL}>
               <a target={"_blank"}>
                 <button className="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.7)] hover:shadow-cyan-500/50 rounded-full text-xs md:text-lg transition duration-300 ease-in-out">
                   Resume

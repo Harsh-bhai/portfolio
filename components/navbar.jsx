@@ -1,22 +1,15 @@
-// yarn add react-icons --save
-// yarn add hamburger-react
 "use client";
 import React from "react";
 import { useRef, useEffect } from "react";
 import { MdAccountCircle } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
-// import { FaRegLightbulb } from "react-icons/fa";
-// import { IoBagHandle } from "react-icons/io5";
-// import { MdInfoOutline } from "react-icons/md";
-// import { FaHandshakeSimple } from "react-icons/fa6";
-
-
 import Link from "next/link";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import AudioPlayer from "./audioplayer";
+import { RESUME_URL } from "../data/constants";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 const Navbar = () => {
@@ -106,14 +99,16 @@ const Navbar = () => {
               { text: "Projects", section: "project" },
               { text: "Certifications", section: "certifications" },
               { text: "Connect", section: "contact" },
-              { text: "Resume", href: "https://drive.google.com/file/d/1GNy45ZTDTg66rg2OhShZtcflKOnsccwv/view?usp=sharing" },
+              { text: "Resume", href: RESUME_URL },
             ].map((item) => (
               <div
                 key={item.text}
                 onClick={() => {
                   toggle();
                   TogglehiddenOverflow();
-                  scrollToSection(item.section || "");
+                  item.section ?? scrollToSection(item.section);
+                  console.log(item.section);
+                  
                 }}
                 className="hover:text-cyan-100 font-semibold  text-cyan-400 cursor-pointer"
               >
@@ -134,3 +129,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
