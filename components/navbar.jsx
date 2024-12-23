@@ -106,7 +106,7 @@ const Navbar = () => {
                 onClick={() => {
                   toggle();
                   TogglehiddenOverflow();
-                  item.section ?? scrollToSection(item.section);
+                  item.section && scrollToSection(item.section);
                   console.log(item.section);
                   
                 }}
