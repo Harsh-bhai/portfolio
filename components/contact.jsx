@@ -1,20 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { SiDiscord,SiLeetcode  } from "react-icons/si";
+import { SiDiscord, SiLeetcode } from "react-icons/si";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
-
-
   useEffect(() => {
     gsap.from(".connecttitle", {
       opacity: 0,
@@ -22,26 +20,27 @@ const Contact = () => {
       duration: 1,
       scrollTrigger: {
         trigger: "#contact",
-        start: 'top 80%',
-        end: 'top 30%',
+        start: "top 80%",
+        end: "top 30%",
       },
     });
 
-        // Scroll-triggered animation for the content
-        gsap.from(".connectcontent", {
-          opacity: 0,
-          y: 50,
-          duration: 1,
-          scrollTrigger: {
-            trigger: "#contact",
-            start: 'top 50%',
-            end: 'top 20%',
-          },
-        });
-  }, [])
+    gsap.from(".connectcontent", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#contact",
+        start: "top 50%",
+        end: "top 20%",
+      },
+    });
+  }, []);
+
   const [state, handlesubmit] = useForm("mqkoajkd");
+
   const clicked = () => {
-    toast.success("Message Sent SuccessFully", {
+    toast.success("Message Sent Successfully", {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
@@ -53,22 +52,23 @@ const Contact = () => {
     });
   };
 
-  const validation= (  ) => {
-try {
-  let name =document.getElementById("name").value
-  let email =document.getElementById("email").value
-  let textarea =document.getElementById("message").value
-  if(name.length>5 && email.length>5 && textarea.length>5){
-    clicked()
-    document.getElementById("name").value=""
-    document.getElementById("email").value=""
-    document.getElementById("message").value=""
-  }    
-} catch (error) {
-  console.log(error)
-}
-
-  }
+  const validation = (e) => {
+    e.preventDefault();
+    try {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let textarea = document.getElementById("message").value;
+      if (name.length > 5 && email.length > 5 && textarea.length > 5) {
+        clicked();
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        handlesubmit(e);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <section id="contact" className="text-cyan-600 body-font relative">
@@ -90,9 +90,7 @@ try {
         theme="light"
       />
       <form
-        onSubmit={handlesubmit}
-        action="https://formspree.io/f/mqkoajkd"
-        method="POST"
+        onSubmit={validation}
         className="container px-5 py-24 mx-auto"
       >
         <div className="flex flex-col text-center w-full mb-12">
@@ -115,7 +113,8 @@ try {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-800 bg-opacity-50 rounded border border-cyan-600 focus:border-cyan-400 focus:bg-gray-800 focus:ring-1 focus:ring-cyan-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required
+                  className="w-full bg-gray-800 bg-opacity-50 rounded border border-cyan-600 focus:border-cyan-400 focus:bg-gray-800 focus:ring-1 focus:ring-cyan-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required
                 />
                 <ValidationError
                   prefix="Message"
@@ -136,7 +135,8 @@ try {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-gray-800 bg-opacity-50 rounded border border-cyan-600 focus:border-cyan-400 focus:bg-gray-800 focus:ring-1 focus:ring-cyan-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required
+                  className="w-full bg-gray-800 bg-opacity-50 rounded border border-cyan-600 focus:border-cyan-400 focus:bg-gray-800 focus:ring-1 focus:ring-cyan-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required
                 />
                 <ValidationError
                   prefix="Message"
@@ -168,7 +168,6 @@ try {
             <div className="p-2 w-full">
               <button
                 type="submit"
-                onClick={validation}
                 disabled={state.submitting}
                 className="flex mx-auto text-white hover:scale-110 hover:bg-white transition-transform bg-cyan-600 border-0 py-2 px-8 focus:outline-none hover:text-cyan-600  text-lg rounded-full"
               >
@@ -207,7 +206,6 @@ try {
                   className="ml-3 text-cyan-500 "
                 >
                   <a target="_blank">
-                    {" "}
                     <svg
                       fill="currentColor"
                       stroke="currentColor"
@@ -226,9 +224,7 @@ try {
                   </a>
                 </Link>
                 <Link
-                  href={
-                    "https://www.facebook.com/profile.php?id=100014142857134  "
-                  }
+                  href={"https://www.facebook.com/profile.php?id=100014142857134  "}
                   className="text-cyan-500 "
                 >
                   <a target="_blank">
@@ -271,7 +267,6 @@ try {
                     </svg>
                   </a>
                 </Link>
-
               </span>
             </div>
           </div>
@@ -282,3 +277,4 @@ try {
 };
 
 export default Contact;
+
