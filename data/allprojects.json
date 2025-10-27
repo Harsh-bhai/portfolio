@@ -1,4 +1,18 @@
 {
+  "SmartClinic_Desktop": {
+    "type": "Desktop Application",
+    "name": "SmartClinic Desktop",
+    "desc": "This is Electron based Desktop Application for Dentist/Doctors",
+    "img": "SmartClinic_Desktop.png",
+    "meta": {
+      "maindesc": "This is Electron based Desktop Application for Dentist/Doctors to digitalize their work and provide them a better experience. Its not completed yet, but it is a work in progress.",
+      "tech": "Electron ,React 19, Express, Shadcn UI, Sqlite."
+    },
+    "Links": {
+      "link": "https://github.com/Harsh-bhai/SmartClinic-Desktop",
+      "live": null
+    }
+  },
   "SpotiFusion": {
     "type": "Music Organzier",
     "name": "SpotiFusion",
@@ -38,23 +52,7 @@
     },
     "Links": {
       "link": "https://github.com/Harsh-bhai/crime-mapping",
-      "live": "https://crimemapper.netlify.app"
-    }
-  },
-
-  "Chatapp": {
-    "type": "Chat Application",
-    "name": "ChatApp",
-    "desc": "Android Application",
-    "img": "landscape chatapp.jpg",
-    "meta": {
-      "maindesc": "This is a chat application based on flutter and firebase",
-      "tech": "Flutter ,Firebase, Dart, Android."
-    },
-    "Links": {
-      "link": "https://github.com/Harsh-bhai/chatapp",
       "live": null
     }
   }
-
 }
